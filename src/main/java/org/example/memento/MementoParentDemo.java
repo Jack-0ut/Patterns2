@@ -14,20 +14,25 @@ public class MementoParentDemo {
         Originator originator = new Originator();
 
         System.out.println("Generate stats 2 times and save it");
-        generatedStats = Stats.generate();
-        generatedStats.print();
-        originator.setState(generatedStats);
-        careTaker.add(originator.saveStateToMemento());
+
         generatedStats = Stats.generate();
         generatedStats.print();
         originator.setState(generatedStats);
         careTaker.add(originator.saveStateToMemento());
 
+        generatedStats = Stats.generate();
+        generatedStats.print();
+        originator.setState(generatedStats);
+        careTaker.add(originator.saveStateToMemento());
+
+
         System.out.println("Load 2 generated stats");
+
         originator.getStateFromMemento(careTaker.get(0));
         generatedStats = originator.getState();
         generatedStats.print();
-        originator.getStateFromMemento(careTaker.get(0));
+
+        originator.getStateFromMemento(careTaker.get(1));
         generatedStats = originator.getState();
         generatedStats.print();
 
