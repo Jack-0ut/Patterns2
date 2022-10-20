@@ -1,12 +1,16 @@
-package org.example.visitor;
+package org.example.visitor.Stats;
+
+import org.example.visitor.DataElement;
+import org.example.visitor.visitor.DataElementsVisitor;
 
 import java.util.HashMap;
 import java.util.Set;
+import java.util.TreeMap;
 
 /** Class that defines 6 Attributes for every Character
  * Using Dice class to generate Stats and save it to the HashMap with key 'Attribute Name'
  **/
-public class Stats implements DataElement{
+public class Stats implements DataElement {
     private HashMap<String,Integer> stats = new HashMap<>();
 
     public Stats(int strength, int dexterity, int constitution, int intellect, int wisdom, int charisma) {
@@ -44,8 +48,7 @@ public class Stats implements DataElement{
 
     // For visitor pattern
     @Override
-    public void accept() {
-        System.out.println("\t\tAttributes");
-        this.print();
+    public TreeMap accept(DataElementsVisitor elementsVisitor) {
+        return elementsVisitor.visit(this);
     }
 }

@@ -1,7 +1,7 @@
 package org.example.visitor.CharacterRaces.Gnome;
 
 import org.example.visitor.CharacterRaces.CharacterRace;
-import org.example.visitor.Stats;
+import org.example.visitor.Stats.Stats;
 
 public class Gnome extends CharacterRace {
     public Gnome(Stats bonuses){

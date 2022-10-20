@@ -1,7 +1,7 @@
 package org.example.visitor.CharacterRaces.Elf;
 
 import org.example.visitor.RaceAbstractFactory;
-import org.example.visitor.Stats;
+import org.example.visitor.Stats.Stats;
 
 public class ElfFactory implements RaceAbstractFactory {
 

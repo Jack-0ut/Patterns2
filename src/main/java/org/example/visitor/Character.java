@@ -2,8 +2,11 @@ package org.example.visitor;
 
 import org.example.visitor.CharacterRaces.CharacterRace;
 import org.example.visitor.CharactersClasses.CharacterClass;
+import org.example.visitor.Stats.Stats;
+import org.example.visitor.visitor.DataElementsVisitor;
 
 import java.util.Set;
+import java.util.TreeMap;
 
 /**
  * Class that contains all information about character :
@@ -11,14 +14,18 @@ import java.util.Set;
  **/
 public class Character implements DataElement {
     private String name;
+    private int health;
     private Stats attributes;
     private CharacterRace race;
     private CharacterClass characterClass;
+
+
 
     public Character(String name, CharacterClass characterClass, CharacterRace race) {
         this.name = name;
         this.race = race;
         this.characterClass = characterClass;
+        this.health = characterClass.getHP();
     }
 
     public void talk() {
@@ -40,6 +47,22 @@ public class Character implements DataElement {
         }
     }
 
+
+
+
+    // For visitor pattern
+    @Override
+    public TreeMap accept(DataElementsVisitor elementsVisitor) {
+        return elementsVisitor.visit(this);
+    }
+
+    public CharacterClass getCharacterClass() {return characterClass;}
+
+    public void setAttributes(Stats attributes) {
+        this.attributes = attributes;
+        this.health += Math.floor(this.attributes.getStats().get("Constitution") /2) -5;
+    }
+
     public Stats getAttributes() {
         return attributes;
     }
@@ -48,17 +71,8 @@ public class Character implements DataElement {
         return race;
     }
 
-    public CharacterClass getCharacterClass() {
-        return characterClass;
-    }
+    public int getHealth() {return health;}
 
-    public void setAttributes(Stats attributes) {
-        this.attributes = attributes;
-    }
+    public String getName() {return name;}
 
-    // For visitor pattern
-    @Override
-    public void accept() {
-        System.out.println("Name :" + this.name);
-    }
 }

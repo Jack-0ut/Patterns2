@@ -1,7 +1,7 @@
 package org.example.visitor.CharacterRaces.Elf;
 
 import org.example.visitor.CharacterRaces.CharacterRace;
-import org.example.visitor.Stats;
+import org.example.visitor.Stats.Stats;
 
 public class Elf extends CharacterRace {
     public Elf(Stats bonuses){

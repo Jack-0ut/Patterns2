@@ -1,4 +1,4 @@
-package org.example.visitor;
+package org.example.visitor.Stats;
 
 import java.util.ArrayList;
 import java.util.Collections;
