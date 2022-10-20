@@ -1,0 +1,32 @@
+[
+  {
+    "Attributes":
+    {
+      "Charisma":14,
+      "Dexterity":17,
+      "Wisdom":13,
+      "Intellect":17,
+      "Strength":14,
+      "Constitution":12
+    },
+    "Class":"Barbarian",
+    "Health":12,
+    "Name":"AlexGnommy",
+    "Race":"Gnome"
+  },
+  {
+    "Attributes":
+    {
+      "Charisma":15,
+      "Dexterity":18,
+      "Wisdom":17,
+      "Intellect":16,
+      "Strength":13,
+      "Constitution":12
+    },
+    "Class":"Druid",
+    "Health":9,
+    "Name":"Morti Stender",
+    "Race":"Elf"
+  }
+]
