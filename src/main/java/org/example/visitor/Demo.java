@@ -18,15 +18,7 @@ public class Demo {
         elementVisitor.visit(gnomeCharacter.getRace());
         elementVisitor.visit(gnomeCharacter.getAttributes());
 
-        /*gnomeCharacter.printCharacter();
 
-        System.out.println("\t\tAttributes");
-        gnomeCharacter.getAttributes().print();
-
-        gnomeCharacter.addRaceBonuses();
-
-        System.out.println("\t\tAfter adding bonuses");
-        gnomeCharacter.getAttributes().print();*/
 
 
     }

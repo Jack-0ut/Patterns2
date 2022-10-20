@@ -11,6 +11,7 @@ import java.util.Set;
  **/
 public class Character implements DataElement {
     private String name;
+    private int health;
     private Stats attributes;
     private CharacterRace race;
     private CharacterClass characterClass;
@@ -19,6 +20,7 @@ public class Character implements DataElement {
         this.name = name;
         this.race = race;
         this.characterClass = characterClass;
+        this.health = characterClass.getHP();
     }
 
     public void talk() {
@@ -26,7 +28,7 @@ public class Character implements DataElement {
     }
 
     public void printCharacter() {
-        System.out.println("Name: " + name);
+        System.out.println("Name: " + name + "\n" + "Health: " + health);
         System.out.println(characterClass.toString());
         race.print();
     }
@@ -54,11 +56,12 @@ public class Character implements DataElement {
 
     public void setAttributes(Stats attributes) {
         this.attributes = attributes;
+        this.health += Math.floor(this.attributes.getStats().get("Constitution") /2) -5;
     }
 
     // For visitor pattern
     @Override
     public void accept() {
-        System.out.println("Name :" + this.name);
+        System.out.println("Name :" + this.name + "\n" + "Health: " + health);
     }
 }

@@ -16,13 +16,12 @@ public abstract class CharacterClass implements DataElement {
 
     @Override
     public String toString() {
-        return "Class " + name + "\n" +
-                "Health=" + hp;
+        return "Class " + name + "\n" + "Base Health: " + hp;
     }
 
     // For visitor pattern
     @Override
     public void accept() {
-        System.out.println(this.toString());
+        System.out.println("Class: " + this.name);
     }
 }
