@@ -1,4 +1,4 @@
-package org.example.abstract_factory.CharactersClasses;
+package org.example.visitor.CharactersClasses;
 
 public class Barbarian extends CharacterClass {
     private String perk;

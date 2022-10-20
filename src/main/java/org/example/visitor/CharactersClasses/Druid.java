@@ -1,4 +1,4 @@
-package org.example.abstract_factory.CharactersClasses;
+package org.example.visitor.CharactersClasses;
 
 import java.util.ArrayList;
 import java.util.List;

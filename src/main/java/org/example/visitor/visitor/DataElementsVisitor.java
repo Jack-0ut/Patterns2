@@ -1,9 +1,9 @@
-package org.example.abstract_factory.visitor;
+package org.example.visitor.visitor;
 
-import org.example.abstract_factory.Character;
-import org.example.abstract_factory.CharacterRaces.CharacterRace;
-import org.example.abstract_factory.CharactersClasses.CharacterClass;
-import org.example.abstract_factory.Stats;
+import org.example.visitor.Character;
+import org.example.visitor.CharacterRaces.CharacterRace;
+import org.example.visitor.CharactersClasses.CharacterClass;
+import org.example.visitor.Stats;
 
 /**
  * interface that define all objects we could visit

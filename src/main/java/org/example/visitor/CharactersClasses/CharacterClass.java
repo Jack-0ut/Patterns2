@@ -1,6 +1,6 @@
-package org.example.abstract_factory.CharactersClasses;
+package org.example.visitor.CharactersClasses;
 
-import org.example.abstract_factory.DataElement;
+import org.example.visitor.DataElement;
 
 /** Abstract class that defines Classes for our Characters
  * For every race we have health ('hp' attribute)

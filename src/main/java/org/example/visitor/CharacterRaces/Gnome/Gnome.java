@@ -1,7 +1,7 @@
-package org.example.abstract_factory.CharacterRaces.Gnome;
+package org.example.visitor.CharacterRaces.Gnome;
 
-import org.example.abstract_factory.CharacterRaces.CharacterRace;
-import org.example.abstract_factory.Stats;
+import org.example.visitor.CharacterRaces.CharacterRace;
+import org.example.visitor.Stats;
 
 public class Gnome extends CharacterRace {
     public Gnome(Stats bonuses){

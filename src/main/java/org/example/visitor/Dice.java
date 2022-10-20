@@ -1,4 +1,4 @@
-package org.example.abstract_factory;
+package org.example.visitor;
 
 import java.util.ArrayList;
 import java.util.Collections;

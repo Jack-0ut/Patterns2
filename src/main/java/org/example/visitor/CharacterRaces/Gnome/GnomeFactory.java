@@ -1,7 +1,7 @@
-package org.example.abstract_factory.CharacterRaces.Gnome;
+package org.example.visitor.CharacterRaces.Gnome;
 
-import org.example.abstract_factory.RaceAbstractFactory;
-import org.example.abstract_factory.Stats;
+import org.example.visitor.RaceAbstractFactory;
+import org.example.visitor.Stats;
 
 
 public class GnomeFactory implements RaceAbstractFactory {

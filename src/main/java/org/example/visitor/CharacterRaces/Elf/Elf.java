@@ -1,7 +1,7 @@
-package org.example.abstract_factory.CharacterRaces.Elf;
+package org.example.visitor.CharacterRaces.Elf;
 
-import org.example.abstract_factory.CharacterRaces.CharacterRace;
-import org.example.abstract_factory.Stats;
+import org.example.visitor.CharacterRaces.CharacterRace;
+import org.example.visitor.Stats;
 
 public class Elf extends CharacterRace {
     public Elf(Stats bonuses){

@@ -1,7 +1,7 @@
-package org.example.abstract_factory.CharacterRaces;
+package org.example.visitor.CharacterRaces;
 
-import org.example.abstract_factory.DataElement;
-import org.example.abstract_factory.Stats;
+import org.example.visitor.DataElement;
+import org.example.visitor.Stats;
 
 /**
  * Abstract class that defines the Races our Characters could have

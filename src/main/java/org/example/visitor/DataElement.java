@@ -1,4 +1,4 @@
-package org.example.abstract_factory;
+package org.example.visitor;
 
 public interface DataElement {
     public void accept();

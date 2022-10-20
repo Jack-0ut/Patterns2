@@ -1,7 +1,7 @@
-package org.example.abstract_factory;
-import org.example.abstract_factory.CharacterRaces.Gnome.GnomeFactory;
-import org.example.abstract_factory.CharactersClasses.ClassFactory;
-import org.example.abstract_factory.visitor.ElementVisitor;
+package org.example.visitor;
+import org.example.visitor.CharacterRaces.Gnome.GnomeFactory;
+import org.example.visitor.CharactersClasses.ClassFactory;
+import org.example.visitor.visitor.ElementVisitor;
 
 public class Demo {
     public static void main(String[] args) {

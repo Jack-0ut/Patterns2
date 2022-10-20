@@ -1,7 +1,7 @@
-package org.example.abstract_factory;
+package org.example.visitor;
 
-import org.example.abstract_factory.CharacterRaces.CharacterRace;
-import org.example.abstract_factory.CharactersClasses.CharacterClass;
+import org.example.visitor.CharacterRaces.CharacterRace;
+import org.example.visitor.CharactersClasses.CharacterClass;
 
 import java.util.Set;
 

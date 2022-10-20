@@ -1,7 +1,6 @@
-package org.example.abstract_factory;
+package org.example.visitor;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Set;
 
 /** Class that defines 6 Attributes for every Character
