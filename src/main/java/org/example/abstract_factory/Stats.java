@@ -4,8 +4,12 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
-public class Stats {
+/** Class that defines 6 Attributes for every Character
+ * Using Dice class to generate Stats and save it to the HashMap with key 'Attribute Name'
+ **/
+public class Stats implements DataElement{
     private HashMap<String,Integer> stats = new HashMap<>();
+
     public Stats(int strength, int dexterity, int constitution, int intellect, int wisdom, int charisma) {
         stats.put("Strength",strength);
         stats.put("Dexterity",dexterity);
@@ -29,13 +33,20 @@ public class Stats {
         this.stats = stats;
     }
 
+    // Print 6 stats on the screen
     public void print(){
         Set<String> attributesSet = stats.keySet();
-
         System.out.println("#################################################################");
         for(String e : attributesSet){
             System.out.println(e + ": " + stats.get(e));
         }
         System.out.println("#################################################################");
+    }
+
+    // For visitor pattern
+    @Override
+    public void accept() {
+        System.out.println("\t\tAttributes");
+        this.print();
     }
 }

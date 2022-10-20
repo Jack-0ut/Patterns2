@@ -1,4 +1,4 @@
-package org.example.abstract_factory.Gnome;
+package org.example.abstract_factory.CharacterRaces.Gnome;
 
 import org.example.abstract_factory.RaceAbstractFactory;
 import org.example.abstract_factory.Stats;

@@ -1,13 +1,12 @@
-package org.example.abstract_factory.Gnome;
+package org.example.abstract_factory.CharacterRaces.Gnome;
 
-import org.example.abstract_factory.CharacterRace;
+import org.example.abstract_factory.CharacterRaces.CharacterRace;
 import org.example.abstract_factory.Stats;
 
 public class Gnome extends CharacterRace {
     public Gnome(Stats bonuses){
         super(bonuses);
         this.name = "Gnome";
-        this.health = 6;
         this.bonuses = bonuses;
     }
 

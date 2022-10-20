@@ -1,9 +1,7 @@
-package org.example.abstract_factory.Elf;
+package org.example.abstract_factory.CharacterRaces.Elf;
 
 import org.example.abstract_factory.RaceAbstractFactory;
 import org.example.abstract_factory.Stats;
-
-import java.util.HashMap;
 
 public class ElfFactory implements RaceAbstractFactory {
 
